@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Weather Forecast</h1>
+    </header>
+
+    <div class="search-container">
+        <div class="search-row">
+            <input type="text" id="location-input" placeholder="Enter city name">
+            <button id="search-button">Search</button>
+            <button id="current-location-button">Use My Location</button>
+        </div>
+    </div>
+
+    <div class="error-message" id="error-message"></div>
+
+    <main>
+        <section class="current-weather" id="current-weather">
+            <div class="weather-card">
+                <h2 id="location-name">Please enter a location</h2>
+                <div class="weather-info">
+                    <div class="temperature">
+                        <span id="temperature">  </span>°C
+                    </div>
+                    <div class="weather-icon">
+                        <img id="weather-icon" src="" alt="Weather icon">
+                    </div>
+                    <div class="weather-description" id="weather-description">  </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail">
+                        <span class="label">Humidity:</span>
+                        <span id="humidity">  </span>%
+                    </div>
+                    <div class="detail">
+                        <span class="label">Wind Speed:</span>
+                        <span id="wind-speed">  </span> m/s
+                    </div>
+                    <div class="detail">
+                        <span class="label">Pressure:</span>
+                        <span id="pressure">  </span> hPa
+                    </div>
+                    <div class="detail">
+                        <span class="label">Visibility:</span>
+                        <span id="visibility">  </span> km
+                    </div>
+                </div>
+                <button id="save-button" class="save-button">Save This Query</button>
+            </div>
+        </section>
+
+        <section class="forecast" id="forecast">
+            <h2>Future 5 days</h2>
+            <div class="forecast-container" id="forecast-container">
+            </div>
+        </section>
+
+        <section class="location-media" id="location-media">
+            <div class="media-tabs">
+                <button class="tab-button" data-tab="video-tab">YouTube Videos</button>
+                <button class="tab-button active" data-tab="map-tab">Google Maps</button>
+                <button class="tab-button" data-tab="photo-tab">Photos</button>
+            </div>
+
+            <div class="tab-content" id="video-tab">
+                <h2>Videos About This Location</h2>
+                <div id="videos-container" class="videos-container">
+                    <div class="loading">Loading videos...</div>
+                </div>
+            </div>
+
+            <div class="tab-content active" id="map-tab">
+                <h2>Location Map</h2>
+                <div id="map-container">
+                    <div id="map">Loading map...</div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="photo-tab">
+                <h2>Photos of This Location</h2>
+                <div id="photos-container" class="photos-container">
+                    <div class="loading">Loading photos...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="history" id="history-section">
+            <h2>Search History</h2>
+            <div class="history-actions">
+                <button id="export-json">Export JSON</button>
+                <button id="export-xml">Export XML</button>
+                <button id="export-csv">Export CSV</button>
+                <button id="export-pdf">Export PDF</button>
+                <button id="export-markdown">Export Markdown</button>
+            </div>
+            <div class="history-container" id="history-container">
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

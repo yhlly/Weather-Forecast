@@ -1,0 +1,7 @@
+module.exports = {
+    OPENWEATHER_API_KEY: '1572aef4eb80fe2a3ec4b1418e4e0d5a',
+    YOUTUBE_API_KEY: 'AIzaSyAgFukbWKivpmjOA3zsZyxPFyK8mERfW6k',
+    GOOGLE_MAPS_API_KEY: 'AIzaSyBm5iATHJ212WTaOrzZNRkArLIM14NvRp0',
+    UNSPLASH_ACCESS_KEY: '73YozDArmUJS2mo6wHQBfQ3xMrykIwCixwQ-WlmLsHs'
+};
+
