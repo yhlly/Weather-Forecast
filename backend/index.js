@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, '../frontend')));
 const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
-    password: 'yangshanyu3636', // use your own password
+    password: '', // use your own password
     database: 'weather_app',
     waitForConnections: true,
     connectionLimit: 10,
